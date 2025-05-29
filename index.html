@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirabel's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="intro-section">
     <div class="intro-content">
-      <h1>Hi, I'm Mirabel, and this is what's in my bag (portfolio)...</h1>
-      <img src="bag.png" alt="Bag image" class="bag-image" />
+      <h1 id="typewriter"></h1>
+      <img src="bag.png" alt="Bag image" class="bag-image hidden" />
+      <div class="nav-buttons hidden">
+        <button onclick="scrollToSection('about')">About Me</button>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('resume')">Resume</button>
+      </div>
     </div>
   </section>
 
-  <section class="sections">
-    <div class="section-card">About Me</div>
-    <div class="section-card">Projects</div>
-    <div class="section-card">Resume</div>
-    <div class="section-card">Contact</div>
-  </section>
+  <!-- Placeholder Sections -->
+  <section id="about" class="content-section">About Me content here</section>
+  <section id="projects" class="content-section">Projects content here</section>
+  <section id="resume" class="content-section">Resume content here</section>
+
+  <footer class="footer">
+    <p>📞 760-390-9916</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/mirabel-luo" target="_blank">LinkedIn</a></p>
+    <p>✉️ <a href="mailto:mluo12@jh.edu">mluo12@jh.edu</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
