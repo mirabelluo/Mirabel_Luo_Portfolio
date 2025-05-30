@@ -21,7 +21,13 @@ function typeWriter() {
     navButtons.classList.remove("hidden");
     navButtons.classList.add("show");
     revealButtons();
-  }
+  
+    // Show about blurb after buttons animate
+    setTimeout(() => {
+      const aboutBlurb = document.getElementById("about-blurb");
+      aboutBlurb.classList.add("show");
+    }, 500); // wait just a bit for nav buttons to fade in
+  }  
 }
 
 function revealButtons() {
@@ -42,3 +48,8 @@ function scrollToSection(id) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+function comingSoon() {
+    alert("🧵 This page needs a little mending — I promise I'm not procrastinating...check back soon!");
+  }
+  

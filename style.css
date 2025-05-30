@@ -1,6 +1,6 @@
 body {
     font-family: 'Unna', sans-serif;
-    background: #f5f5f5;
+    background: #ffffff;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
   }
   
   #typewriter {
@@ -58,12 +58,89 @@ body {
   .nav-buttons button:hover {
     background-color: #444;
   }
+
+  .about-blurb {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .about-blurb.show {
+    opacity: 1;
+  }  
   
   .content-section {
     padding: 100px 20px;
     text-align: center;
     font-size: 1.5rem;
   }
+
+  .featured-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .projects-section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+  }
+  
+  .project-text {
+    flex: 1 1 350px;
+    max-width: 600px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .project-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .project-text p {
+    margin-bottom: 15px;
+  }
+  
+  .project-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .learn-more:hover {
+    color: #004a99;
+    text-decoration: underline;
+  }  
+
 
   @keyframes dropIn {
     0% {
@@ -98,9 +175,9 @@ body {
   
   .footer {
     text-align: center;
-    background-color: #9e0904;
+    background-color: #c72520;
     color: white;
-    padding: 40px 20px;
+    padding: 25px 20px;
   }
   
   .footer a {
@@ -110,4 +187,19 @@ body {
   
   .footer a:hover {
     text-decoration: underline;
-  }  
+  }
+
+  .contact-line span {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .contact-line a {
+    color: #77c1ff;
+    text-decoration: none;
+  }
+  
+  .contact-line a:hover {
+    text-decoration: underline;
+  }
+  
