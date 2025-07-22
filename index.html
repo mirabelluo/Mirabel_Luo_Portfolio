@@ -16,7 +16,7 @@
       <img src="bag.png" alt="Bag image" class="bag-image hidden" />
       <div class="nav-buttons hidden">
         <button onclick="scrollToSection('projects')">Projects</button>
-        <button onclick="scrollToSection('personal interests')">Personal Interests</button>
+        <button onclick="scrollToSection('personal-interests')">Personal Interests</button>
         <button onclick="window.open('mirabelluo_resume.pdf', '_blank')">Resume</button>
         <button onclick="scrollToSection('contact')">Contact</button> 
       </div>
@@ -44,19 +44,68 @@
           <!-- <a class="learn-more" href="projects/HSWET.html" target="_blank">Learn More</a> -->
           <a class="learn-more" href="#" onclick="comingSoon(); return false;">Learn More</a>
         </p>
-        
       </div>
   
       <div class="project-image">
         <img src="images/proj_hswet.png" alt="HSWET annotated diagram" />
       </div>
     </div>
+
+    <div class="featured-project">
+      <div class="project-text">
+        <h3>3T Active Pixel Sensor Camera — VLSI Design</h3>
+        <p>
+          As part of a team VLSI project, we designed a 3-transistor (3T) APS <strong>camera sensor</strong> including schematic, layout, and post-layout simulation. 
+          We focused on <strong>maximizing the fill factor</strong> of the pixel array to improve light sensitivity, while ensuring charge transfer and readout functionality remained reliable.
+        </p>
+        <p>
+          Our final design included transistor sizing optimizations, area-efficient layout planning, and parasitic-aware simulations. We also built a testing module to scan rows and display pixel outputs, simulating sensor behavior under varying light.
+        </p>
+        <p><a class="learn-more" href="#" title="Project details coming soon!">Learn More →</a></p>
+      </div>
+
+      <div class="project-image">
+        <img src="images/vlsi-camera-layout.png" alt="Annotated layout of 3T APS design" />
+      </div>
+    </div>
+
+    <div class="featured-project">
+      <div class="project-text">
+        <h3>Diurnal & Seasonal Wind Veer & Shear Analysis</h3>
+        <p>
+          Investigated how wind shear and veer vary over daily and seasonal cycles at two sites (one in the Southern Great Plains &amp; one on Block Island) using multi-year LiDAR observations and model output data.
+        </p>
+        <p>
+          Quantified model performance, revealed systematic biases in model, and highlighted the role of atmospheric stability in wind veer behavior.
+        </p>
+        <p>
+        <a class="learn-more" href="#" onclick="comingSoon(); return false;">Learn More</a>
+        </p>
+        </div>
+        <div class="project-image">
+        <img src="images/veer-shear-plot.png" alt="Wind veer & shear diurnal plot" />
+      </div>
+  </div>
   </section>
 
-  <section id="personal interests" class="projects-section">
-    <h2>Personal Interests (Coming Soon)</h2>
+  <section class="interests-section" id="personal-interests">
+    <h2>Personal Interests</h2>
+    <div class="interests-grid">
+      <div class="interest-item" onclick="comingSoon(); return false;">
+        <img src="icons/art.png" alt="Art icon">
+        <p>I paint, I’m learning to crochet, and I’m always finding new arts and craft projects.</p>
+      </div>
+      <div class="interest-item" onclick="comingSoon(); return false;">
+        <img src="icons/music.png" alt="Music icon">
+        <p>I LOVE finding new music and genres! click to see my (always updating) favorite songs.</p>
+      </div>
+      <div class="interest-item" onclick="comingSoon(); return false;">
+        <img src="icons/f1.png" alt="F1 icon">
+        <p>My favorite driver is Carlos Sainz, and yes, <em>Cars 2</em> is the best Cars movie.</p>
+      </div>
+    </div>
   </section>
-  
+
   <footer class="footer" id="contact">
     <p class="contact-line">
       <span>📞 760-390-9916</span>

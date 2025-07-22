@@ -85,17 +85,17 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 40px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   }
 
   .projects-section h2 {
     font-size: 2.2rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     background-color: #ffffff;
   }
   
@@ -125,6 +125,67 @@ body {
     width: 100%;
     border-radius: 8px;
   }
+
+.interests-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.interests-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.interest-item {
+  width: 220px;       /* More space for both icon + text */
+  padding: 10px;      /* Optional: add a little buffer around */
+  margin-bottom: 20px;
+  opacity: 0;
+  display: flex;
+  transform: translateY(20px);
+  flex-direction: column;
+  align-items: center;  /* Ensures image + text are both centered */
+  text-align: center;
+  transition: all 0.6s ease;
+  width: 140px;
+  cursor: pointer;
+}
+
+.interest-item.show:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.interest-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.interest-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.interest-item p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;       /* Add spacing from the icon */
+  margin-bottom: 0;        /* Optional: tighter spacing if needed */
+  text-align: center;      /* Ensure caption is centered under the icon */
+  max-width: 200px;        /* Prevent overly long lines */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
   .learn-more {
     display: inline-block;

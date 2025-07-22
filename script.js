@@ -40,7 +40,19 @@ function revealButtons() {
   });
 }
 
-window.onload = typeWriter;
+window.addEventListener('load', () => {
+  typeWriter();
+
+  // Animate personal interest icons if they exist
+  const items = document.querySelectorAll('.interest-item');
+  if (items.length > 0) {
+    items.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add('show');
+      }, index * 150);
+    });
+  }
+});
 
 function scrollToSection(id) {
   const section = document.getElementById(id);
